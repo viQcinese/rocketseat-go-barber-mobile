@@ -1,11 +1,29 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Image } from 'react-native';
 
-import { Container } from './styles';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+
+import logoImg from '../../assets/logo.png';
+
+import { Container, Title } from './styles';
 
 const SignIn: React.FC = () => (
   <Container>
-    <Text>SignIn</Text>
+    <Image source={logoImg} />
+
+    <Title>Faça seu logon</Title>
+
+    <Input name="email" icon="mail" placeholder="email" />
+    <Input name="password" icon="lock" placeholder="senha" />
+
+    <Button
+      onPress={() => {
+        console.log('hi');
+      }}
+    >
+      Entrar
+    </Button>
   </Container>
 );
 
