@@ -1,6 +1,7 @@
 {
   "env": {
-      "es6": true
+      "es6": true,
+      "browser": true
   },
   "extends": [
       "plugin:@typescript-eslint/recommended",
@@ -35,6 +36,9 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
+    "camelcase": "off",
+    "arrow-parens": "off",
+    "import/no-duplicates": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
